@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KKK Tours & Travels - Best Travel Agency in Coimbatore</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #FF6B00;
+      --secondary: #003366;
+      --light: #f8f9fa;
+      --dark: #212529;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ---------------- TOP CONTACT BAR ---------------- */
+    .top-contact-bar {
+      background-color: var(--secondary);
+      color: white;
+      font-size: 0.9rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .top-contact-bar a {
+      color: white;
+      text-decoration: none;
+      margin-right: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .top-contact-bar a:hover {
+      color: var(--primary);
+    }
+
+    /* ---------------- NAVBAR ---------------- */
+    .navbar {
+      background-color: var(--dark) !important;
+    }
+
+    .navbar-brand img {
+      height: 42px;
+    }
+
+    .navbar-nav .nav-link {
+      padding: 0.6rem 1rem;
+      transition: color 0.3s ease, transform 0.2s ease;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .navbar-nav .nav-link.active {
+      color: var(--primary) !important;
+      font-weight: 600;
+    }
+
+    .navbar .btn {
+      border-radius: 30px;
+      font-weight: 500;
+      background-color: var(--primary);
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .navbar .btn:hover {
+      background-color: #e65c00;
+      transform: translateY(-2px);
+    }
+
+    /* ---------------- HERO SECTION ---------------- */
+    .hero {
+      background: url('coimbatore3.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.55); /* dark overlay */
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 15px 0 25px;
+    }
+
+    /* ---------------- WHATSAPP FLOAT ---------------- */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 100;
+    }
+
+    .whatsapp-float-content {
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 28px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float-content:hover {
+      transform: scale(1.1);
+      background: #1ebe57;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-contact-bar py-2">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+      <!-- Left: Phones & WhatsApp -->
+      <div class="d-flex flex-wrap align-items-center gap-3 mb-2 mb-md-0">
+        <a href="tel:+918610713453"><i class="fas fa-phone-alt me-1"></i> +91 86107 13453</a>
+        <a href="tel:+919994456789"><i class="fas fa-phone-alt me-1"></i> +91 99944 56789</a>
+        <a href="https://wa.me/918610713453" target="_blank">
+          <i class="fab fa-whatsapp me-1 text-success"></i> WhatsApp Us
+        </a>
+      </div>
+
+      <!-- Right: Email -->
+      <div>
+        <a href="mailto:info@kkktours.com"><i class="fas fa-envelope me-1"></i> info@kkktours.com</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+    <div class="container d-flex align-items-center">
+
+      <!-- Brand -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="image2.png" alt="KKK Tours & Travels" class="me-2">
+        <span class="fw-bold">KKK Tours & Travels</span>
+      </a>
+
+      <!-- Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fleet">Our Fleet</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="btn text-white px-3 ms-lg-3" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore the World with KKK Tours & Travels</h1>
+<p>Your adventure starts here — welcome to KKK Tours & Travels, your trusted travel partner.</p>
+      <a href="#packages" class="btn btn-primary btn-lg">View Packages</a>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/918610713453" target="_blank" class="whatsapp-float-content">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    <!-- Popular Packages -->
+   <section id="packages" class="py-5 bg-light">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Popular Tour Packages</h2>
+      <p class="text-muted">Choose from our carefully curated and affordable packages</p>
+    </div>
+    
+    <div class="row g-4">
+      <!-- Package 1 -->
+      <div class="col-md-4">
+        <div class="card package-card h-100 shadow-lg border-0 rounded-3 animate__animated animate__fadeInUp" style="animation-delay: 0.2s; transition: transform 0.3s, box-shadow 0.3s;">
+          <img src="ooty-tour.jpg" class="card-img-top rounded-top" alt="Ooty Tour">
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="badge bg-primary">2 Days</span>
+              <span class="text-primary fw-bold">₹2,999/-</span>
+            </div>
+            <h5 class="card-title">Ooty Weekend Getaway</h5>
+            <p class="card-text">Explore the Queen of Hills with visits to Botanical Gardens, Doddabetta Peak, Ooty Lake and more.</p>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item border-0"><i class="fas fa-check text-success me-2"></i>Accommodation</li>
+              <li class="list-group-item border-0"><i class="fas fa-check text-success me-2"></i>Breakfast & Dinner</li>
+              <li class="list-group-item border-0"><i class="fas fa-check text-success me-2"></i>Sightseeing</li>
+            </ul>
+            <a href="#" class="btn btn-primary w-100">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Package 2 -->
+      <div class="col-md-4">
+        <div class="card package-card h-100 shadow-lg border-0 rounded-3 animate__animated animate__fadeInUp" style="animation-delay: 0.4s; transition: transform 0.3s, box-shadow 0.3s;">
+          <img src="isha-tour.jpg" class="card-img-top rounded-top" alt="Isha Yoga Tour">
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="badge bg-primary">1 Day</span>
+              <span class="text-primary fw-bold">₹999/-</span>
+            </div>
+            <h5 class="card-title">Isha Yoga Day Trip</h5>
+            <p class="card-text">Spiritual journey to Isha Yoga Center with Dhyanalinga visit, guided tour and meditation experience.</p>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item border-0"><i class="fas fa-check text-success me-2"></i>Pickup & Drop</li>
+              <li class="list-group-item border-0"><i class="fas fa-check text-success me-2"></i>Guided Tour</li>
+              <li class="list-group-item border-0"><i class="fas fa-check text-success me-2"></i>Lunch</li>
+            </ul>
+            <a href="#" class="btn btn-primary w-100">Book Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Package 3 -->
+      <div class="col-md-4">
+        <div class="card package-card h-100 shadow-lg border-0 rounded-3 animate__animated animate__fadeInUp" style="animation-delay: 0.6s; transition: transform 0.3s, box-shadow 0.3s;">
+          <img src="valparai-tour.jpg" class="card-img-top rounded-top" alt="Valparai Tour">
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="badge bg-primary">3 Days</span>
+              <span class="text-primary fw-bold">₹4,999/-</span>
+            </div>
+            <h5 class="card-title">Valparai Nature Trail</h5>
+            <p class="card-text">Discover the hidden gem of Valparai with visits to tea estates, waterfalls and wildlife spotting.</p>
+            <ul class="list-group list-group-flush mb-3">
+              <li class="list-group-item border-0"><i class="fas fa-check text-success me-2"></i>2 Nights Stay</li>
+              <li class="list-group-item border-0"><i class="fas fa-check text-success me-2"></i>All Meals</li>
+              <li class="list-group-item border-0"><i class="fas fa-check text-success me-2"></i>Nature Guide</li>
+            </ul>
+            <a href="#" class="btn btn-primary w-100">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-4">
+      <a href="#" class="btn btn-outline-primary px-4 py-2">View All Packages</a>
+    </div>
+  </div>
+</section>
+
+<!-- Extra Styling -->
+<style>
+  /* Smooth hover transition */
+  .package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  .package-card img {
+    transition: transform 0.3s ease;
+  }
+  .package-card:hover img {
+    transform: scale(1.05);
+  }
+</style>
+
+   <!-- Destinations Section -->
+<section id="destinations" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">🌍 Explore Beautiful Destinations</h2>
+      <p class="text-muted">Popular tourist spots near Coimbatore</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Destination Card -->
+      <div class="col-md-3 col-6">
+        <div class="destination-card overflow-hidden rounded-3 position-relative shadow-sm">
+          <img src="ooty-dest.jpg" class="img-fluid w-100 transition-img" alt="Ooty">
+          <div class="destination-overlay p-3">
+            <h5 class="fw-bold">Ooty</h5>
+            <p class="small">Queen of Hill Stations</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="destination-card overflow-hidden rounded-3 position-relative shadow-sm">
+          <img src="coonoor-dest.jpg" class="img-fluid w-100 transition-img" alt="Coonoor">
+          <div class="destination-overlay p-3">
+            <h5 class="fw-bold">Coonoor</h5>
+            <p class="small">Tea Gardens & Valleys</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="destination-card overflow-hidden rounded-3 position-relative shadow-sm">
+          <img src="valparai-dest.jpg" class="img-fluid w-100 transition-img" alt="Valparai">
+          <div class="destination-overlay p-3">
+            <h5 class="fw-bold">Valparai</h5>
+            <p class="small">Hidden Paradise</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="destination-card overflow-hidden rounded-3 position-relative shadow-sm">
+          <img src="isha-dest.jpg" class="img-fluid w-100 transition-img" alt="Isha Yoga">
+          <div class="destination-overlay p-3">
+            <h5 class="fw-bold">Isha Yoga Center</h5>
+            <p class="small">Spiritual Retreat</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- More cards -->
+      <!-- Repeat the same structure for other destinations -->
+    </div>
+  </div>
+</section>
+
+<!-- Fleet Section -->
+<section id="fleet" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">🚐 Our Premium Fleet</h2>
+      <p class="text-muted">Well-maintained vehicles for comfortable journeys</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="card border-0 shadow-sm h-100 fleet-card">
+          <img src="innova-crysta.jpeg" class="card-img-top transition-img" alt="Innova Crysta">
+          <div class="card-body text-center">
+            <h5 class="card-title">Toyota Innova Crysta</h5>
+            <p class="text-muted">7 Seater | AC | Luxury</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="card border-0 shadow-sm h-100 fleet-card">
+          <img src="tempo-traveller.jpeg" class="card-img-top transition-img" alt="Tempo Traveller">
+          <div class="card-body text-center">
+            <h5 class="card-title">Tempo Traveller</h5>
+            <p class="text-muted">12 Seater | AC | Comfort</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="card border-0 shadow-sm h-100 fleet-card">
+          <img src="swift-dzire.jpeg" class="card-img-top transition-img" alt="Swift Dzire">
+          <div class="card-body text-center">
+            <h5 class="card-title">Swift Dzire</h5>
+            <p class="text-muted">4 Seater | AC | Economy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="card border-0 shadow-sm h-100 fleet-card">
+          <img src="force-traveller.jpeg" class="card-img-top transition-img" alt="Force Traveller">
+          <div class="card-body text-center">
+            <h5 class="card-title">Force Traveller</h5>
+            <p class="text-muted">20 Seater | AC | Group</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="about-us.jpg" class="img-fluid rounded-3 shadow-lg transition-img" alt="About KKK Tours">
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <h2 class="fw-bold">✨ About KKK Tours & Travels</h2>
+        <p class="lead">Your Trusted Travel Partner in Coimbatore Since 2010</p>
+        <p>KKK Tours & Travels has been providing exceptional travel experiences to tourists visiting Coimbatore and nearby hill stations. With over a decade of experience, we take pride in our customer-centric approach and commitment to quality service.</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Licensed by Tamil Nadu Tourism Department</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Experienced drivers with excellent local knowledge</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Well-maintained fleet of vehicles</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Customizable tour packages</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> 24/7 customer support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">💬 What Our Customers Say</h2>
+      <p class="text-muted">Hear from our happy travelers</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm transition-card">
+          <div class="card-body">
+            <div class="mb-3 text-warning">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Excellent service! The Ooty tour was well organized and our driver was very knowledgeable. Will definitely book with KKK Tours again."</p>
+          </div>
+          <div class="card-footer bg-transparent border-0 d-flex align-items-center">
+            <img src="customer1.jpeg" class="rounded-circle me-3" width="50" alt="Customer">
+            <div>
+              <h6 class="mb-0">Rahul Sharma</h6>
+              <small class="text-muted">Bangalore</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm transition-card">
+          <div class="card-body">
+            <div class="mb-3 text-warning">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"The Isha Yoga day trip was a wonderful experience. The vehicle was comfortable and the driver was punctual. Highly recommended!"</p>
+          </div>
+          <div class="card-footer bg-transparent border-0 d-flex align-items-center">
+            <img src="customer2.jpeg" class="rounded-circle me-3" width="50" alt="Customer">
+            <div>
+              <h6 class="mb-0">Priya Patel</h6>
+              <small class="text-muted">Chennai</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm transition-card">
+          <div class="card-body">
+            <div class="mb-3 text-warning">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>"We booked a tempo traveller for our family trip to Valparai. The vehicle was clean and the driver was very helpful throughout the journey."</p>
+          </div>
+          <div class="card-footer bg-transparent border-0 d-flex align-items-center">
+            <img src="customer3.jpeg" class="rounded-circle me-3" width="50" alt="Customer">
+            <div>
+              <h6 class="mb-0">Anil Kumar</h6>
+              <small class="text-muted">Hyderabad</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS Enhancements -->
+<style>
+  .transition-img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  .transition-img:hover {
+    transform: scale(1.08);
+    filter: brightness(0.9);
+  }
+  .fleet-card:hover {
+    transform: translateY(-10px);
+    transition: 0.4s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  .transition-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .transition-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  }
+  .destination-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(6px);
+    transition: 0.4s;
+  }
+  .destination-card:hover .destination-overlay {
+    background: rgba(0,0,0,0.6);
+    color: #fff !important;
+  }
+</style>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2 class="fw-bold mb-4">Contact Us</h2>
+                    <div class="mb-4">
+                        <h5 class="fw-bold"><i class="fas fa-map-marker-alt text-primary me-2"></i> Address</h5>
+                        <p>47A, Sathy Main Road, Saravanampatti,<br>Coimbatore - 641 035, Tamil Nadu</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold"><i class="fas fa-phone-alt text-primary me-2"></i> Phone</h5>
+                        <p><a href="tel:+918610713453">+91 86107 13453</a><br>
+                        <a href="tel:+919994456789">+91 99944 56789</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold"><i class="fas fa-envelope text-primary me-2"></i> Email</h5>
+                        <p><a href="mailto:info@kkktours.com">info@kkktours.com</a><br>
+                        <a href="mailto:bookings@kkktours.com">bookings@kkktours.com</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold"><i class="fas fa-clock text-primary me-2"></i> Working Hours</h5>
+                        <p>Monday - Sunday: 7:00 AM - 10:00 PM<br>
+                        24/7 Emergency Support Available</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://wa.me/918610713453" class="text-decoration-none me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-4 mt-lg-0">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Get in Touch</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.123456789012!2d76.987654321!3d11.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDA3JzI0LjQiTiA3NsKwNTknMTUuNiJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="image2.png" alt="KKK Tours" height="40" class="mb-3">
+                    <p>KKK Tours & Travels offers premium travel services in Coimbatore with well-maintained vehicles and experienced staff.</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#packages" class="text-white text-decoration-none">Packages</a></li>
+                        <li class="mb-2"><a href="#destinations" class="text-white text-decoration-none">Destinations</a></li>
+                        <li class="mb-2"><a href="#fleet" class="text-white text-decoration-none">Our Fleet</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Popular Packages</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Ooty Tour Package</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Isha Yoga Day Trip</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Valparai Weekend</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Coonoor Tea Estate Tour</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Kodaikanal Family Package</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <p>Subscribe to get updates on new packages and offers.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 KKK Tours & Travels. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by KKK Tours</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/918610713453" target="_blank" class="text-decoration-none">
+            <div class="whatsapp-float-content bg-success text-white rounded-circle shadow">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </div>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate__animated');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const animation = entry.target.getAttribute('data-animation');
+                        entry.target.classList.add('animate__' + animation);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
