@@ -516,6 +516,73 @@
     </div>
   </div>
 </section>
+<section class="clients_area">
+  <div class="container">
+    <div class="clients_grid">
+      <div class="client_item">
+        <img src="client-1.png" alt="Client 1">
+      </div>
+      <div class="client_item">
+        <img src="client-2.png" alt="Client 2">
+      </div>
+      <div class="client_item">
+        <img src="client-3.png" alt="Client 3">
+      </div>
+      <div class="client_item">
+        <img src="client-4.png" alt="Client 4">
+      </div>
+      <div class="client_item">
+        <img src="client-5.png" alt="Client 5">
+      </div>
+      <div class="client_item">
+        <img src="client-6.png" alt="Client 6">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.clients_area {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.clients_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+.client_item {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.client_item img {
+  max-width: 120px;
+  max-height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.client_item:hover {
+  border-color: #f39c12;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.client_item:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+</style>
+
 
 <!-- Testimonials -->
 <section class="py-5 bg-light">
